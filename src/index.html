@@ -6,14 +6,91 @@
       http-equiv="X-UA-Compatible"
       content="IE=edge" />
     <meta
-      name="theme-color"
-      content="#43B693" />
-    <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>QWERy traveling</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div class="first-page">
+      <div class="first-page__container">
+        <div class="header">
+          <h1 class="header__logo">QWERy</h1>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#"> Information </a>
+            </li>
+            <li class="menu__item">
+              <a href="#">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Culture</a>
+            </li>
+          </ul>
+          <div class="search">
+            <label for="search"></label>
+            <input
+              id="search"
+              type="text"
+              class="search__input"
+              placeholder="Search"
+              autocomplete="off" />
+          </div>
+        </div>
+        <section class="content">
+          <h2 class="content__title">explore the Nature Beauty</h2>
+          <p class="content__text">
+            <span class="content__text_bold">Discover</span><br />
+            Wonderful Indonesia
+          </p>
+        </section>
+        <div class="scroll-link">
+          <a href="#"
+            >Scroll down
+            <img
+              src="./assets/icons/arrow_down.svg"
+              alt="arrow down icon" />
+          </a>
+        </div>
+        <div class="social-links">
+          <span class="social-links__item">Follow us</span>
+          <img
+            width="24"
+            height="24"
+            src="./assets/icons/instagram.png"
+            alt="instagram icon"
+            class="social-links__item" />
+          <img
+            width="24"
+            height="24"
+            src="./assets/icons/twitter.png"
+            alt="twitter icon"
+            class="social-links__item" />
+          <img
+            width="24"
+            height="24"
+            src="./assets/icons/facebook.png"
+            alt="facebook icon"
+            class="social-links__item" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="post">
+        <img
+          src="./assets/images/nusa.png"
+          alt="landscape image of East Nusa Tenggara" />
+        <section class="content">
+          <h2 class="content__title">EAST NUSA TENGGARA</h2>
+          <h3 class="content__subtitle">Have you enjoyed your holiday?</h3>
+          <p>
+            You will be amazed if you take part in this sailing Komodo island tour
+            package. So it is also mandatory for you, besides enjoying Komodo tourism on
+            Komodo Island, you also have to taste the marine tourism. The beautiful waters
+            of Komodo will make you meet many travelers from other countries.
+          </p>
+          <a href="#">read more</a>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

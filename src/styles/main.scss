@@ -1,6 +1,9 @@
+@import "variables.scss";
+@import "first-page.scss";
+
 body {
-  #root {
-    height: 200px;
-    background-color: aqua;
-  }
+  background-color: $color-black;
+  color: $color-primary;
+  font-size: $fs-m;
+  font-family: $font-family, sans-serif;
 }
