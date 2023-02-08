@@ -4,6 +4,7 @@ const btnNext = document.querySelector("#btnNext");
 
 let count = 0;
 const positions = [0, 1460, 2920];
+sliderBody.style.right = 0;
 
 btnPrev.addEventListener("click", () => {
   if (count === 0) {
