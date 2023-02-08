@@ -11,7 +11,7 @@
     <title>QWERy traveling</title>
   </head>
   <body>
-    <div class="first-page">
+    <header class="first-page">
       <div class="first-page__container">
         <div class="header">
           <h1 class="header__logo">QWERy</h1>
@@ -53,28 +53,34 @@
         </div>
         <div class="social-links first-page__social-links">
           <span class="social-links__item">Follow us</span>
-          <img
-            width="24"
-            height="24"
-            src="./assets/icons/instagram.png"
-            alt="instagram icon"
-            class="social-links__item" />
-          <img
-            width="24"
-            height="24"
-            src="./assets/icons/twitter.png"
-            alt="twitter icon"
-            class="social-links__item" />
-          <img
-            width="24"
-            height="24"
-            src="./assets/icons/facebook.png"
-            alt="facebook icon"
-            class="social-links__item" />
+          <a href="#">
+            <img
+              width="24"
+              height="24"
+              src="./assets/icons/instagram.png"
+              alt="instagram icon"
+              class="social-links__item" />
+          </a>
+          <a href="#">
+            <img
+              width="24"
+              height="24"
+              src="./assets/icons/twitter.png"
+              alt="twitter icon"
+              class="social-links__item" />
+          </a>
+          <a href="#">
+            <img
+              width="24"
+              height="24"
+              src="./assets/icons/facebook.png"
+              alt="facebook icon"
+              class="social-links__item" />
+          </a>
         </div>
       </div>
-    </div>
-    <div
+    </header>
+    <main
       id="posts"
       class="container">
       <div class="post info-block">
@@ -220,7 +226,107 @@
           <button class="action__button button">Get started</button>
         </div>
       </div>
-    </div>
-    <footer class="footer"></footer>
+    </main>
+    <footer class="footer container">
+      <div class="footer__row">
+        <form
+          class="email-form"
+          id="email-form">
+          <h2>Let's go on vacation, Make your day</h2>
+          <div class="input-wrapper">
+            <input
+              id="form-input"
+              type="text"
+              placeholder="Email adress"
+              class="email-form__input" />
+            <label class="email-form__label">
+              <button
+                type="submit"
+                class="email-form__btn">
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="" />
+              </button>
+            </label>
+          </div>
+        </form>
+        <div class="footer__navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__title">Services</li>
+            <li class="navigation-list__link">
+              <a href="#">Email Marketing</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Campaigns</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Branding</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Offline</a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li class="navigation-list__title">About</li>
+            <li class="navigation-list__link">
+              <a href="#">Our Story</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Benefits</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Team</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li class="navigation-list__title">Help</li>
+            <li class="navigation-list__link">
+              <a href="#">FAQs</a>
+            </li>
+            <li class="navigation-list__link">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__row links-row">
+        <div>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="socials-icons">
+          <a href="#">
+            <img
+              width="24"
+              height="24"
+              src="./assets/icons/instagram.png"
+              alt="instagram icon"
+              class="social-links__item" />
+          </a>
+          <a href="#">
+            <img
+              width="24"
+              height="24"
+              src="./assets/icons/twitter.png"
+              alt="twitter icon"
+              class="social-links__item" />
+          </a>
+          <a href="#">
+            <img
+              width="24"
+              height="24"
+              src="./assets/icons/facebook.png"
+              alt="facebook icon"
+              class="social-links__item" />
+          </a>
+        </div>
+      </div>
+      <div class="footer__row">
+        <h3 class="copyright-title">Copyright 2021 QWERy</h3>
+      </div>
+    </footer>
   </body>
 </html>
