@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 55px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 55px;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.01em;
+    color: $color-primary;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-right: 55px;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: $color-orange;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 24px 70px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 3px 1px $color-orange;
+      transform: scale(1.01);
+    }
+    &:active {
+      cursor: pointer;
+      box-shadow: none;
+      transform: scale(1);
+    }
+  }
+}
