@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .content {
+    max-width: 632px;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__title {
+      @extend %content-title;
+      margin-bottom: 27px;
+    }
+    &__subtitle {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 87px;
+      margin-bottom: 27px;
+    }
+    &__text {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 27px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color-primary2;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
