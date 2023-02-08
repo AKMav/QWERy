@@ -4,9 +4,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 250px;
+
+  &.info-block {
+    .content {
+      max-width: 632px;
+    }
+  }
 
   .content {
-    max-width: 632px;
     * {
       margin: 0;
       padding: 0;

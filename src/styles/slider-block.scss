@@ -1,0 +1,86 @@
+@import "./variables.scss";
+
+.slider {
+  height: 985px;
+  max-width: 1460px;
+
+  &__button {
+    width: 30px;
+    height: 30px;
+    background: url("../assets/icons/chevron.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      filter: contrast(0.7);
+    }
+    &:active {
+      filter: contrast(0.3);
+    }
+  }
+
+  .button_prev {
+    position: relative;
+    z-index: 2;
+    left: 50px;
+  }
+  .button_next {
+    position: relative;
+    z-index: 2;
+    right: 50px;
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    max-width: 935px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 72px;
+      margin-left: 32px;
+      background-color: $color-primary2;
+    }
+  }
+
+  &__subtitle {
+    max-width: 705px;
+  }
+
+  &__wrapper {
+    width: 1460px;
+    height: 985px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__row {
+    width: calc(3 * 1460px);
+    height: 100%;
+    display: flex;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    background: url("../assets/images/bromo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 40px;
+  }
+}
